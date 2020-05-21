@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JetpackDemo</string>
+    <string name="button">Button</string>
+    <string name="app_verion">1.0.1beta</string>
+    <string name="button_msg">login</string>
+    <string name="username_hint">input account</string>
+    <string name="password_hint">input password</string>
+</resources>

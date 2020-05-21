@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">JetpackDemo</string>
+    <string name="app_name">杰特派克</string>
+    <string name="button">按钮</string>
+    <string name="app_verion">1.0.1正式</string>
+    <string name="button_msg">登录</string>
+    <string name="username_hint">请输入账号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="todo">TODO</string>
 </resources>
