@@ -1,7 +1,6 @@
 package com.example.jetpackdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -10,6 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.jetpackdemo.viewmodel.MyViewModel;
+
+/**
+ * 引入liveData数据生命管理类
+ */
 public class Main3Activity extends AppCompatActivity {
     MyViewModel myViewModel;
     ViewModelProvider.AndroidViewModelFactory factory ;
