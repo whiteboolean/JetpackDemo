@@ -10,17 +10,17 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.SavedStateHandle;
 
 import java.util.Random;
-import java.util.logging.Handler;
 
 public class MyViewModel extends AndroidViewModel {
     private SavedStateHandle handle;
-    public static final String KEY_HIGH_SCORE = "key_high_score";
-    public static final String KEY_LEFT_NUMBER = "key_left_number";
+    private static final String KEY_HIGH_SCORE = "key_high_score";
+    private static final String KEY_LEFT_NUMBER = "key_left_number";
     private static final String KEY_RIGHT_NUMBER = "key_right_number";
     private static final String KEY_OPERATOR = "key_operator";
     private static final String KEY_ANSWER = "key_answer";
-    public static final String SAVE_SHP_DATA_NAME = "save_shp_data_name";
-    public static final String KEY_CURRENT_NAME = "key_current_name";
+    private static final String SAVE_SHP_DATA_NAME = "save_shp_data_name";
+    private static final String KEY_CURRENT_NAME = "key_current_name";
+    public boolean win_flag =  false;
 
     public MyViewModel(@NonNull Application application, SavedStateHandle handle) {
         super(application);
@@ -56,24 +56,65 @@ public class MyViewModel extends AndroidViewModel {
         return handle.getLiveData(KEY_CURRENT_NAME);
     }
 
+    public MutableLiveData<Integer> getAnswer() {
+        return handle.getLiveData(KEY_ANSWER);
+    }
 
-    void generator() {
+
+   public void generator() {
         int LEVEL = 20;
-
         Random random = new Random();
         int x, y;
         x = random.nextInt(LEVEL) + 1; //0 - 19 --->  +1  --->  1 -- 20
         y = random.nextInt(LEVEL) + 1;
         if (x % 2 == 0) {
             getOperator().setValue("+");
-
-
+            if (x > y) {
+                getAnswer().setValue(x);
+                getLeftNumber().setValue(y);
+                getRightNumber().setValue(x - y);
+            } else {
+                getAnswer().setValue(y);
+                getLeftNumber().setValue(x);
+                getRightNumber().setValue(y - x);
+            }
         } else {
             getOperator().setValue("-");
+            if (x > y) {
+                getAnswer().setValue(x - y);
+                getLeftNumber().setValue(x);
+                getRightNumber().setValue(y);
+            } else {
+                getAnswer().setValue(y-x);
+                getLeftNumber().setValue(y);
+                getRightNumber().setValue(x);
 
-
+            }
         }
     }
+
+
+    @SuppressWarnings("ConstantConditions")
+    public void save(){
+        SharedPreferences shp = getApplication().getSharedPreferences(SAVE_SHP_DATA_NAME,Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = shp.edit();
+        editor.putInt(KEY_HIGH_SCORE,getHighScore().getValue());
+        editor.apply();
+    }
+
+
+    @SuppressWarnings("ConstantConditions")
+    public void answerCorrect(){
+        getCurrentScore().setValue(getCurrentScore().getValue()+1);
+        if (getCurrentScore().getValue()>getHighScore().getValue()){
+            getHighScore().setValue(getCurrentScore().getValue());
+            win_flag = true;
+        }
+        generator();
+    }
+
+
+
 
 
 }

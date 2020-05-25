@@ -74,4 +74,13 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.2.2'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
     compileOnly 'com.google.android.wearable:wearable:2.4.0'
+
+
+    def room_version = "2.2.3"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    // For Kotlin use kapt instead of annotationProcessor
+    // Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
 }

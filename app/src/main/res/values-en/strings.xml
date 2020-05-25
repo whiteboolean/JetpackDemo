@@ -6,4 +6,5 @@
     <string name="button_msg">login</string>
     <string name="username_hint">input account</string>
     <string name="password_hint">input password</string>
+    <string name="calculation_test">calculation_test</string>
 </resources>

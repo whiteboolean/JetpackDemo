@@ -4,8 +4,6 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-    <uses-feature android:name="android.hardware.type.watch" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,43 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".calculation_demo06.Main9Activity"></activity>
-
-        <uses-library
-            android:name="com.google.android.wearable"
-            android:required="true" />
-        <!--
-               Set to true if your app is Standalone, that is, it does not require the handheld
-               app to run.
-        -->
-        <meta-data
-            android:name="com.google.android.wearable.standalone"
-            android:value="true" />
-
-        <activity
-            android:name=".calculation_demo06.Main8Activity"
-            android:label="@string/title_activity_main8">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-
-        <receiver android:name=".android_view_model_04.NewAppWidget">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/new_app_widget_info" />
-        </receiver> <!-- <activity android:name=".sp_demo.Main5Activity"></activity> -->
-        <!-- <activity android:name=".MyActivity3"></activity> -->
-        <activity android:name=".navigations_05.Main7Activity">
+        <activity android:name=".vocabulary_demo08.Main10Activity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
