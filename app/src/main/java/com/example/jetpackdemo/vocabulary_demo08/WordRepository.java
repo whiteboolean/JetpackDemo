@@ -24,6 +24,10 @@ public class WordRepository  {
         return wordDao.getAllWords();
     }
 
+    public LiveData<List<Word>> getListPattern(String pattern){
+        return wordDao.findWordsByPattern( "%"+pattern+"%");
+    }
+
     public WordDataBase getWordDataBase() {
         return wordDataBase;
     }
@@ -61,6 +65,8 @@ public class WordRepository  {
     public void deleteAllWords(){
         new DeleteAllAsyncTask(wordDao).execute();
     }
+
+
 
     static class DeleteAllAsyncTask extends AsyncTask<Word, Void, Void> {
 

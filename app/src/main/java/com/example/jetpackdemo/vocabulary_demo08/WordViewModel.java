@@ -20,10 +20,13 @@ public class WordViewModel extends BaseViewModel {
         repository = new WordRepository(application);
     }
 
-     LiveData<List<Word>> getListLiveData() {
-        return repository.getWordDao().getAllWords();
+     public LiveData<List<Word>> getListLiveData() {
+        return repository.getListLiveData();
     }
 
+    public LiveData<List<Word>> getPatternLiveData(String pattern){
+        return repository.getListPattern(pattern);
+    }
 
      void insertWords(Word... words) {
         repository.insertWords(words);

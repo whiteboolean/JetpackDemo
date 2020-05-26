@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -46,7 +47,7 @@ public class Main10Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main12);
         navController = Navigation.findNavController(findViewById(R.id.fragment3));
-        NavigationUI.setupActionBarWithNavController(this,navController);//设置返回按钮
+        NavigationUI.setupActionBarWithNavController(this, navController);//设置返回按钮
 //
 //        button1 = findViewById(R.id.button20);
 ////        button2 = findViewById(R.id.button21);
