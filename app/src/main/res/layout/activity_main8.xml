@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lifecycles_demo07.Main8Activity">
+    tools:context=".day07_lifecycles_demo.Main8Activity">
 
     <Chronometer
         android:id="@+id/textView26"
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.jetpackdemo.lifecycles_demo07.MyChronometer
+    <com.example.jetpackdemo.day07_lifecycles_demo.MyChronometer
         android:id="@+id/my_chronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

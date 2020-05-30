@@ -6,7 +6,7 @@
     <data>
         <variable
             name="data"
-            type="com.example.jetpackdemo.viewmodel.MyViewModel" />
+            type="com.example.jetpackdemo.day01_viewmodel.MyViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

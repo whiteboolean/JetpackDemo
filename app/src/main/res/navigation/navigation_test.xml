@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/wordsFragment"
-        android:name="com.example.jetpackdemo.vocabulary_demo08.WordsFragment"
+        android:name="com.example.jetpackdemo.day08_vocabulary_demo.WordsFragment"
         android:label="words"
         tools:layout="@layout/fragment_words">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.jetpackdemo.vocabulary_demo08.AddFragment"
+        android:name="com.example.jetpackdemo.day08_vocabulary_demo.AddFragment"
         android:label="add"
         tools:layout="@layout/fragment_add" />
 </navigation>

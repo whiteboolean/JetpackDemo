@@ -5,7 +5,7 @@
     android:id="@+id/wordRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vocabulary_demo08.Main10Activity">
+    tools:context=".day08_vocabulary_demo.Main10Activity">
 
 
     <androidx.recyclerview.widget.RecyclerView

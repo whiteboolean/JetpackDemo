@@ -6,13 +6,13 @@
     <data>
         <variable
             name="data"
-            type="com.example.jetpackdemo.save_Instance_state.MySpViewModel" />
+            type="com.example.jetpackdemo.day03_save_Instance_state.MySpViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".save_Instance_state.Main4Activity">
+        tools:context=".day03_save_Instance_state.Main4Activity">
 
         <TextView
             android:id="@+id/textView9"

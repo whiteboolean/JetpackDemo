@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.jetpackdemo.viewmodel.MyViewModel;
+import com.example.jetpackdemo.day01_viewmodel.MyViewModel;
 
 /**
  * 引入liveData数据生命管理类

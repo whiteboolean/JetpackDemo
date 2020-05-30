@@ -6,14 +6,14 @@
     <data>
         <variable
             name="data"
-            type="com.example.jetpackdemo.calculation_demo06.MyViewModel" />
+            type="com.example.jetpackdemo.day06_calculation_demo.MyViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".calculation_demo06.LoseFragment">
+        tools:context=".day06_calculation_demo.LoseFragment">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline25"

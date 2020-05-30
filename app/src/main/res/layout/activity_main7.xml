@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigations_05.Main7Activity">
+    tools:context=".day05_navigations.Main7Activity">
 
     <fragment
         android:id="@+id/fragment"

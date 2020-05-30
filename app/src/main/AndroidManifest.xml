@@ -3,6 +3,7 @@
     package="com.example.jetpackdemo">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity android:name=".navigation_bottom_09.Main13Activity"></activity>-->
-        <activity
-            android:name=".navigation_bottom_09.Main13Activity"
-            android:windowSoftInputMode="adjustPan">
+        <activity android:name=".day12_kotlindemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

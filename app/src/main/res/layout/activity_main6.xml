@@ -6,13 +6,13 @@
     <data>
         <variable
             name="data"
-            type="com.example.jetpackdemo.android_view_model_04.MyViewModel" />
+            type="com.example.jetpackdemo.day04_android_view_model.MyViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".android_view_model_04.Main6Activity">
+        tools:context=".day04_android_view_model.Main6Activity">
 
         <TextView
             android:id="@+id/textView10"

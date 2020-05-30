@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.jetpackdemo.navigations_05.HomeFragment"
+        android:name="com.example.jetpackdemo.day05_navigations.HomeFragment"
         android:label="家庭"
         tools:layout="@layout/fragment_home">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.jetpackdemo.navigations_05.DetailFragment"
+        android:name="com.example.jetpackdemo.day05_navigations.DetailFragment"
         android:label="细节"
         tools:layout="@layout/fragment_detail">
         <action

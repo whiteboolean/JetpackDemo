@@ -6,7 +6,7 @@
     <data>
         <variable
             name="data"
-            type="com.example.jetpackdemo.navigations_05.MyViewModel" />
+            type="com.example.jetpackdemo.day05_navigations.MyViewModel" />
 
     </data>
 
@@ -14,7 +14,7 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".navigations_05.HomeFragment">
+        tools:context=".day05_navigations.HomeFragment">
 
         <TextView
             android:id="@+id/textView12"
