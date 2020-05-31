@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_viewpager2"
+    app:startDestination="@id/rotateFragment">
+
+    <fragment
+        android:id="@+id/rotateFragment"
+        android:name="com.example.jetpackdemo.day13_viewpager2_demo.RotateFragment"
+        android:label="fragment_rotate"
+        tools:layout="@layout/fragment_rotate" />
+    <fragment
+        android:id="@+id/scaleFragment"
+        android:name="com.example.jetpackdemo.day13_viewpager2_demo.ScaleFragment"
+        android:label="ScaleFragment" />
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="com.example.jetpackdemo.day13_viewpager2_demo.TranslateFragment"
+        android:label="TranslateFragment" />
+</navigation>

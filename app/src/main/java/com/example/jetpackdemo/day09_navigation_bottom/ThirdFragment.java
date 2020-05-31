@@ -1,18 +1,16 @@
 package com.example.jetpackdemo.day09_navigation_bottom;
 
-import androidx.lifecycle.ViewModelProviders;
-
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.jetpackdemo.R;
 
@@ -36,12 +34,11 @@ public class ThirdFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(ThirdViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(ThirdViewModel.class);
         imageView = getView().findViewById(R.id.imageView10);
         imageView.setX(mViewModel.dX);
         ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(imageView,"x",0,0);
         objectAnimator.setDuration(500);
-        // TODO: Use the ViewModel
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

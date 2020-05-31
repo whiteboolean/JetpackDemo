@@ -14,10 +14,10 @@ import kotlinx.android.synthetic.main.gallery_fragment.*
 
 /**
  * 右上角添加menu几个步骤
- * 1.在资源文件中添加menulayout布局文件
+ * 1.在资源文件中添加menuLayout布局文件
  * 2.重写onCreateOptionsMenu方法 - 并且将刚才创建的menu文件引入进来 inflater.inflate()
  * 3.在onCreate中添加setHashOptionsMenu(true)
- * 4.点击事件在on
+ * 4.点击事件在onOptionsItemSelected()方法中
  */
 
 class GalleryFragment : Fragment() {
