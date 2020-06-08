@@ -1,12 +1,12 @@
 package com.example.jetpackdemo.day09_navigation_bottom;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import android.os.Bundle;
 
 import com.example.jetpackdemo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

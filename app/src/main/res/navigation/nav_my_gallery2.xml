@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_my_gallery"
+    app:startDestination="@id/viewPagerInsideFragment">
+
+    <fragment
+        android:id="@+id/viewPagerInsideFragment"
+        android:name="com.example.jetpackdemo.day16_paging_more.ViewPagerInsideFragment"
+        android:label="fragment_view_pager_inside"
+        tools:layout="@layout/fragment_view_pager_inside" >
+        <action
+            android:id="@+id/action_viewPagerInsideFragment_to_photoFragment2"
+            app:destination="@id/photoFragment2"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment2"
+        android:name="com.example.jetpackdemo.day16_paging_more.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" >
+        <action
+            android:id="@+id/action_photoFragment2_to_viewPagerInsideFragment"
+            app:destination="@id/viewPagerInsideFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"/>
+    </fragment>
+</navigation>

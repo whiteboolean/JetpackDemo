@@ -1,14 +1,12 @@
 package com.example.jetpackdemo.day07_lifecycles_demo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.widget.Chronometer;
 
-import com.example.jetpackdemo.R;
+import androidx.appcompat.app.AppCompatActivity;
 
-import static android.util.Log.e;
+import com.example.jetpackdemo.R;
 
 public class Main8Activity extends AppCompatActivity {
 

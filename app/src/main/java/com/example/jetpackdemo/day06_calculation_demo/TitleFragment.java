@@ -14,8 +14,6 @@ import com.example.jetpackdemo.databinding.FragmentTitleBinding;
  */
 public class TitleFragment extends BaseFragment<FragmentTitleBinding, MyViewModel> {
 
-    FragmentTitleBinding binding ;
-    MyViewModel myViewModel;
     @Override
     public Class<MyViewModel> getModelClass() {
         return MyViewModel.class;
@@ -31,9 +29,7 @@ public class TitleFragment extends BaseFragment<FragmentTitleBinding, MyViewMode
      */
     @Override
     public void doSomething() {
-        binding = getDataDing();
-        myViewModel = getViewModel();
-        binding.setData(myViewModel);
+        binding.setData(viewModel);
     }
 
 

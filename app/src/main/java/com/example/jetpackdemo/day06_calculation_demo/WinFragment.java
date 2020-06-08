@@ -14,13 +14,8 @@ import com.example.jetpackdemo.databinding.FragmentWinBinding;
  */
 public class WinFragment extends BaseFragment<FragmentWinBinding,MyViewModel> {
 
-    private FragmentWinBinding binding;
-    private MyViewModel viewModel;
-
     @Override
     public void doSomething() {
-        binding = getDataDing();
-        viewModel =getViewModel();
         binding.setData(viewModel);
     }
 

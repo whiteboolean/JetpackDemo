@@ -23,26 +23,18 @@ import androidx.lifecycle.ViewModelProvider;
 public abstract class BaseFragment<T extends ViewDataBinding ,K extends ViewModel> extends Fragment {
 
     public Activity rAct ;
-    private T binding;
-    private K viewModel;
+    protected T binding;
+    protected K viewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rAct = requireActivity();
-        viewModel = getK();
-        binding = getT(inflater, container);
-        doSomething();
+        viewModel = new ViewModelProvider(this,new SavedStateViewModelFactory(rAct.getApplication(),this)).get(getModelClass());
+        binding = DataBindingUtil.inflate(inflater,layout(),container,false);
         binding.setLifecycleOwner(this);
+        doSomething();
         return binding.getRoot();
-    }
-
-    private T getT(LayoutInflater inflater, ViewGroup container){
-        return DataBindingUtil.inflate(inflater,layout(),container,false);
-    }
-
-    private K getK(){
-        return new ViewModelProvider(this,new SavedStateViewModelFactory(rAct.getApplication(),this)).get(getModelClass());
     }
 
     @Override
@@ -50,15 +42,6 @@ public abstract class BaseFragment<T extends ViewDataBinding ,K extends ViewMode
         secondStep(savedInstanceState);
         super.onActivityCreated(savedInstanceState);
     }
-
-    public T getDataDing(){
-        return binding;
-    }
-
-    public K getViewModel(){
-        return viewModel ;
-    }
-
 
     public abstract void doSomething();
 

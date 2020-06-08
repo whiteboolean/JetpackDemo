@@ -2,7 +2,6 @@ package com.example.jetpackdemo.day11_image_lang
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +23,7 @@ class GalleryAdapter : ListAdapter<Hit, MyViewHolder>(DIFFCALLBACK) {
         val holder = MyViewHolder(view);
         holder.itemView.setOnClickListener {
             Bundle().apply {
-                putParcelable("PHOTO",getItem(holder.adapterPosition))
+                putParcelable("PHOTO",getItem(holder.layoutPosition))
                 holder.itemView.findNavController().navigate(R.id.action_galleryFragment_to_photoFragment,this)
             }
         }

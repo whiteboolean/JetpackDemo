@@ -32,7 +32,7 @@ data class PixaData (
     val user_id: Int,
     val views: Int,
     @SerializedName("webformatHeight")
-    val webFormat: Int,
+    val webformatHeight: Int,
     @SerializedName("webformatURL")
     val previewUrl: String,
     @SerializedName("webformatWidth")

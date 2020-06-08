@@ -1,30 +1,22 @@
 package com.example.jetpackdemo.day11_image_lang
 
 import android.graphics.drawable.Drawable
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
-
 import com.example.jetpackdemo.R
-import kotlinx.android.synthetic.main.gallery_cell.view.*
 import kotlinx.android.synthetic.main.photo_fragment.*
 
 class PhotoFragment : Fragment() {
 
-//    private val navcontroller:NavController by lazy {
-//        Navigation.findNavController(requireActivity(),R.id.f)
-//    }
     companion object {
         fun newInstance() = PhotoFragment()
     }

@@ -16,9 +16,6 @@ import com.example.jetpackdemo.databinding.FragmentLoseBinding;
 public class LoseFragment extends BaseFragment<FragmentLoseBinding,MyViewModel> {
 
 
-   private FragmentLoseBinding binding;
-   private MyViewModel myViewModel ;
-
     @Override
     public void secondStep(Bundle saveInstanceStated) {
         binding.button19.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_loseFragment_to_titleFragment));
@@ -36,9 +33,7 @@ public class LoseFragment extends BaseFragment<FragmentLoseBinding,MyViewModel> 
 
     @Override
     public void doSomething() {
-        binding = getDataDing();
-        myViewModel = getViewModel();
-        binding.setData(myViewModel);
+        binding.setData(viewModel);
 
     }
 }

@@ -1,6 +1,5 @@
 package com.example.jetpackdemo.day11_image_lang
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.os.Handler
 import android.view.*
@@ -8,7 +7,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-
 import com.example.jetpackdemo.R
 import kotlinx.android.synthetic.main.gallery_fragment.*
 
@@ -43,7 +41,6 @@ class GalleryFragment : Fragment() {
             R.id.indicator -> {
                 swipeRefreshLayout1.isRefreshing = true
                 Handler().postDelayed({ viewModel.fetchData() }, 1000)
-
             }
         }
         return super.onOptionsItemSelected(item)
@@ -70,6 +67,8 @@ class GalleryFragment : Fragment() {
         })
         viewModel.photoList.value ?: viewModel.fetchData()
     }
+
+
 
 
 }

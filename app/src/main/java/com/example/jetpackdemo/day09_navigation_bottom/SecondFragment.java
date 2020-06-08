@@ -1,18 +1,16 @@
 package com.example.jetpackdemo.day09_navigation_bottom;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.example.jetpackdemo.R;
 
@@ -31,9 +29,9 @@ public class SecondFragment extends Fragment {
         return inflater.inflate(R.layout.second_fragment, container, false);
     }
 
+
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         mViewModel = new ViewModelProvider(requireActivity()).get(SecondViewModel.class);
         imageView = getView().findViewById(R.id.imageView9);
         imageView.setScaleX(mViewModel.scaleFactor);
@@ -55,5 +53,4 @@ public class SecondFragment extends Fragment {
             }
         });
     }
-
 }
