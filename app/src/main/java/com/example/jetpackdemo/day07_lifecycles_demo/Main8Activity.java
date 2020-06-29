@@ -1,7 +1,6 @@
 package com.example.jetpackdemo.day07_lifecycles_demo;
 
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.widget.Chronometer;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,18 +27,18 @@ public class Main8Activity extends AppCompatActivity {
         getLifecycle().addObserver(myChronometer);
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        elapsedTime = SystemClock.elapsedRealtime() - chronometer.getBase();
-        chronometer.stop();
-    }
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        chronometer.setBase(SystemClock.elapsedRealtime() - elapsedTime);
-        chronometer.start();
-    }
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        elapsedTime = SystemClock.elapsedRealtime() - chronometer.getBase();
+//        chronometer.stop();
+//    }
+//
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        chronometer.setBase(SystemClock.elapsedRealtime() - elapsedTime);
+//        chronometer.start();
+//    }
 }

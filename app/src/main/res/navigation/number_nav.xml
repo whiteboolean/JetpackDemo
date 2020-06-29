@@ -20,4 +20,12 @@
         android:name="com.example.jetpackdemo.day09_navigation_bottom.ThirdFragment"
         android:label="移动"
         tools:layout="@layout/third_fragment" />
+    <fragment
+        android:id="@+id/thirdFragment2"
+        android:name="com.example.jetpackdemo.day09_navigation_bottom.ThirdFragment2"
+        android:label="ThirdFragment2" />
+    <fragment
+        android:id="@+id/thirdFragment3"
+        android:name="com.example.jetpackdemo.day09_navigation_bottom.ThirdFragment3"
+        android:label="ThirdFragment3" />
 </navigation>

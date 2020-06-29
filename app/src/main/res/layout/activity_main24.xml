@@ -4,30 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".day09_navigation_bottom.Main13Activity">
+    tools:context=".day25_view_binding.java.MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="408dp"
+        android:text="Button"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintVertical_bias="1.0"
-        app:menu="@menu/menu" />
+        tools:visibility="gone" />
 
     <fragment
-        android:id="@+id/fragment4"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/fragment6"
+        android:name="com.example.jetpackdemo.day25_view_binding.java.BlankFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/number_nav" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

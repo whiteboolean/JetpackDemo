@@ -5,6 +5,11 @@
     <string name="button_msg">登录</string>
     <string name="username_hint">请输入账号</string>
     <string name="password_hint">请输入密码</string>
+    <string name="message_icon_title" translatable="false">消息</string>
+    <string name="contact_icon_title" translatable="false">通讯录</string>
+    <string name="explore_icon_title" translatable="false">发现</string>
+    <string name="account_icon_title" translatable="false">我</string>
+
     <string name="todo" translatable="false">TODO</string>
     <string name="appwidget_text" translatable="false">EXAMPLE</string>
     <string name="add_widget" translatable="false">Add widget</string>
@@ -44,4 +49,6 @@
     <string name="high_score" translatable="false">High Score:%d</string>
     <string name="you_answer" translatable="false">Your Answer</string>
     <string name="calculation_test">口算测试题</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
 </resources>

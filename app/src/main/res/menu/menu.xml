@@ -14,4 +14,12 @@
         android:id="@+id/thirdFragment"
         android:icon="@drawable/ic_looks_3_black_24dp"
         android:title="移动" />
+    <item
+        android:id="@+id/thirdFragment2"
+        android:icon="@drawable/ic_baseline_looks_4_24"
+        android:title="Item" />
+    <item
+        android:id="@+id/thirdFragment3"
+        android:icon="@drawable/ic_baseline_looks_5_24"
+        android:title="third" />
 </menu>

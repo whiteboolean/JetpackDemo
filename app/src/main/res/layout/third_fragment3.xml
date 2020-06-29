@@ -3,26 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".day02_sp_demo.Main5Activity">
+    android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button36"
+        android:id="@+id/button39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
-        android:layout_marginTop="321dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="339dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button37"
+        android:id="@+id/button40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="94dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="156dp"
         android:text="Button"
-        app:layout_constraintEnd_toEndOf="@+id/button36"
-        app:layout_constraintTop_toBottomOf="@+id/button36" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

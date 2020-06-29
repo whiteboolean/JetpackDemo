@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -43,10 +44,16 @@ public abstract class BaseFragment<T extends ViewDataBinding ,K extends ViewMode
         super.onActivityCreated(savedInstanceState);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
+
     public abstract void doSomething();
 
     public abstract void secondStep(Bundle saveInstanceStated);
 
+    @LayoutRes
     public abstract int layout();
 
     public abstract Class<K> getModelClass();

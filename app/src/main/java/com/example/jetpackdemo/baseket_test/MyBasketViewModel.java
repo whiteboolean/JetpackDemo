@@ -1,7 +1,5 @@
 package com.example.jetpackdemo.baseket_test;
 
-import android.text.TextUtils;
-
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -10,6 +8,7 @@ public class MyBasketViewModel extends ViewModel {
 
     public MutableLiveData<Integer> numberA;
     public MutableLiveData<Integer> numberB;
+    public MutableLiveData<String> changeData = new MutableLiveData<>();
     private int lastA ,lastB;
 
     public MutableLiveData<Integer> getNumberA() {

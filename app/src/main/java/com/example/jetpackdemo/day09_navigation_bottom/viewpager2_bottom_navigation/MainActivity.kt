@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main21.*
 /**
  * https://www.jianshu.com/p/5993e8037d4d
  */
- class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private val favoritesTabIndex = 0
     private val schedulesTabIndex = 1
