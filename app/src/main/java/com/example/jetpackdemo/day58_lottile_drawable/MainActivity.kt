@@ -1,6 +1,5 @@
 package com.example.jetpackdemo.day58_lottile_drawable
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
@@ -10,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_main26.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        setTheme(R.style.AppTheme2)
         setContentView(R.layout.activity_main26)
 
         imageViewLottie.setOnClickListener {
@@ -33,7 +33,10 @@ class MainActivity : AppCompatActivity() {
         })
 
         button41.setOnClickListener{
-            startActivity(Intent(this,MainActivity2::class.java))
+            application.setTheme(R.style.AppTheme2)
+            recreate()
+//            startActivity(Intent(this,MainActivity2::class.java))
         }
+
     }
 }
