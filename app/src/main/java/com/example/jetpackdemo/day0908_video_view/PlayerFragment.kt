@@ -82,6 +82,12 @@ class PlayerFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         mediaPlayer.start()
+        lifecycleScope.launch {
+            while(!mediaPlayer.isPlaying){
+                mediaPlayer.start()
+                delay(500)
+            }
+        }
 
     }
 
