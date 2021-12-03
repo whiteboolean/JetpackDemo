@@ -23,6 +23,8 @@ public class Main3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         factory = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication());
         myViewModel = factory.create(MyViewModel.class);
+
+        myViewModel = new ViewModelProvider(this).get(MyViewModel.class);
         MutableLiveData<Integer> likedNumber = myViewModel.getLikedNumber();
         final TextView textView = findViewById(R.id.textView5);
         likedNumber.observe(this, new Observer<Integer>() {

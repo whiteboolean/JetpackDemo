@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".day1027_custom_view.MainActivity">
 
-    <com.example.jetpackdemo.day1027_custom_view.MyView
-        android:id="@+id/button44"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="104dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

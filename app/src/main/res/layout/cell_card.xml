@@ -9,6 +9,7 @@
     android:layout_marginEnd="8dp"
     android:clickable="true"
     android:focusable="true"
+    android:id="@+id/cd"
     android:foreground="?selectableItemBackground"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
