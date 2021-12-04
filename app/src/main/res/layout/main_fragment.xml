@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="116dp"
+        android:text="StartService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button44"
+        android:layout_width="154dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:text="StopService"
+        app:layout_constraintEnd_toEndOf="@+id/message"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/message"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <Button
+        android:id="@+id/button45"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:text="BindService"
+        app:layout_constraintEnd_toEndOf="@+id/button44"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button44"
+        app:layout_constraintTop_toBottomOf="@+id/button44" />
+
+    <Button
+        android:id="@+id/button46"
+        android:layout_width="165dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        android:text="UnBindService"
+        app:layout_constraintEnd_toEndOf="@+id/button45"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button45"
+        app:layout_constraintTop_toBottomOf="@+id/button45" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
