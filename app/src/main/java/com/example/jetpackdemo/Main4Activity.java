@@ -31,7 +31,6 @@ public class Main4Activity extends AppCompatActivity {
 
 //        MutableLiveData<Integer> likedNumber = myViewModel.getLikedNumber();
 //        final TextView textView = findViewById(R.id.textView5);
-
 //        likedNumber.observe(this, new Observer<Integer>() {
 //            @Override
 //            public void onChanged(Integer integer) {
