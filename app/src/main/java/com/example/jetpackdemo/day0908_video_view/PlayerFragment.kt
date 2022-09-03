@@ -65,15 +65,20 @@ class PlayerFragment : Fragment() {
             }
         }
         surfaceView2.holder.addCallback(object:SurfaceHolder.Callback{
-            override fun surfaceChanged(holder: SurfaceHolder?, format: Int, width: Int, height: Int) {
+            override fun surfaceCreated(holder: SurfaceHolder) {
                 mediaPlayer.setDisplay(holder)
                 mediaPlayer.setScreenOnWhilePlaying(true)
             }
 
-            override fun surfaceDestroyed(holder: SurfaceHolder?) {}
+            override fun surfaceChanged(
+                holder: SurfaceHolder,
+                format: Int,
+                width: Int,
+                height: Int
+            ) {
+            }
 
-            override fun surfaceCreated(holder: SurfaceHolder?) {
-
+            override fun surfaceDestroyed(holder: SurfaceHolder) {
             }
         })
 
