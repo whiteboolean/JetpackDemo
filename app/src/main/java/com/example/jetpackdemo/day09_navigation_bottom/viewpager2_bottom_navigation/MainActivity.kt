@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main21)
 
+
         val fragments = getFragments()
 
         vp.adapter = object : FragmentStateAdapter(this) {
