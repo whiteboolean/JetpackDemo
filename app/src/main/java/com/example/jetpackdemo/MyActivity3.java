@@ -14,7 +14,6 @@ public class MyActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_my3);
     }
 
-
     @Test
     public void test1(){
         System.out.println("测试方法");

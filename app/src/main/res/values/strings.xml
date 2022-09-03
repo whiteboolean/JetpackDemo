@@ -50,5 +50,6 @@
     <string name="you_answer" translatable="false">Your Answer</string>
     <string name="calculation_test">口算测试题</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="ThisText">这是一个文案</string>
 
 </resources>
