@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             override fun getItemCount(): Int = strArray.size
 
             override fun createFragment(position: Int): Fragment {
-                return ItemFragment.newInstance(3)
+                return ItemFragment.newInstance(1)
             }
         }
         TabLayoutMediator(tab_layout,view_pager2){tab,position->
