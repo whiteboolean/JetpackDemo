@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".day2022_0905.MainActivity"
+            android:name=".day2022_0906.ui.login.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
@@ -40,8 +40,8 @@
         </activity>
         <activity
             android:name=".day1203_2021_coroutine.MainActivity"
-            android:exported="true"></activity>
-        <activity android:name=".day1027_custom_view.MainActivity"></activity> <!-- <activity android:name=".day1015_custom_view.CustomEditActivity"></activity> -->
+            android:exported="true" />
+        <activity android:name=".day1027_custom_view.MainActivity" /> <!-- <activity android:name=".day1015_custom_view.CustomEditActivity"></activity> -->
         <activity android:name=".day1015_custom_view.CustomEditActivity" />
         <activity android:name=".day61_workmanager.MainActivity" />
 
