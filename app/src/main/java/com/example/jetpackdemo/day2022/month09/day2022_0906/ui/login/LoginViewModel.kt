@@ -1,12 +1,12 @@
-package com.example.jetpackdemo.day2022_0906.ui.login
+package com.example.jetpackdemo.day2022.month09.day2022_0906.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
 import com.example.jetpackdemo.R
-import com.example.jetpackdemo.day2022_0906.data.LoginRepository
-import com.example.jetpackdemo.day2022_0906.data.Result
+import com.example.jetpackdemo.day2022.month09.day2022_0906.data.LoginRepository
+import com.example.jetpackdemo.day2022.month09.day2022_0906.data.Result
 
 
 class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {

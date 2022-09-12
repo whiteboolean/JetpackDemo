@@ -12,17 +12,42 @@ import kotlinx.android.synthetic.main.activity_main36.*
 import com.google.android.flexbox.FlexboxLayoutManager
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.core.content.res.ResourcesCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 
 
 /**
  * https://www.jianshu.com/p/b3a9c4a99053
  */
+const val TEXT_WITH_DATA_TYPE  = 0
+const val TEXT_WITH_NO_DATA_TYPE = 1
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main36)
+
+
+        val listMulti = findViewById<RecyclerView>(R.id.rcvList)
+
+        val list2 = mutableListOf<MultiDataBean>()
+        for (i in 0..20) {
+            val list1 = MultiDataBean(TEXT_WITH_DATA_TYPE, "你好")
+            list2.add(list1)
+        }
+
+        list2.filterIndexed { index, multiDataBean ->
+            index % 2 == 0
+        }.map {
+            it.itemType = TEXT_WITH_NO_DATA_TYPE
+        }
+
+        val adapter3 = MyMultiAdapter()
+        listMulti.layoutManager = LinearLayoutManager(this)
+        adapter3.setNewInstance(list2)
+        listMulti.adapter = adapter3
 
 
         val layoutManager = FlexboxLayoutManager(this)
@@ -96,7 +121,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         rcv2.adapter =
-            object: BaseQuickAdapter<Int,BaseViewHolder>(R.layout.flexbox_item,mDatas){
+            object : BaseQuickAdapter<Int, BaseViewHolder>(R.layout.flexbox_item, mDatas) {
                 override fun convert(holder: BaseViewHolder, position: Int) {
                     val pos: Int = position % mDatas.size
                     val drawable: Drawable? = ResourcesCompat.getDrawable(

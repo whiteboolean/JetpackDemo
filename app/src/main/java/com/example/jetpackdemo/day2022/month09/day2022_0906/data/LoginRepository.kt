@@ -1,6 +1,6 @@
-package com.example.jetpackdemo.day2022_0906.data
+package com.example.jetpackdemo.day2022.month09.day2022_0906.data
 
-import com.example.jetpackdemo.day2022_0906.data.model.LoggedInUser
+import com.example.jetpackdemo.day2022.month09.day2022_0906.data.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and

@@ -1,4 +1,4 @@
-package com.example.jetpackdemo.day2022_0906.data.model
+package com.example.jetpackdemo.day2022.month09.day2022_0906.data.model
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

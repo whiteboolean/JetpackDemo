@@ -1,4 +1,4 @@
-package com.example.jetpackdemo.day2022_0905
+package com.example.jetpackdemo.day2022.month09.day2022_0905
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.jetpackdemo.R
-import com.example.jetpackdemo.day2022_0905.placeholder.PlaceholderContent
+import com.example.jetpackdemo.day2022.month09.day2022_0905.placeholder.PlaceholderContent
 
 /**
  * A fragment representing a list of Items.

@@ -1,4 +1,4 @@
-package com.example.jetpackdemo.day2022_0906.data
+package com.example.jetpackdemo.day2022.month09.day2022_0906.data
 
 /**
  * A generic class that holds a value with its loading status.

@@ -1,4 +1,4 @@
-package com.example.jetpackdemo.day2022_0905
+package com.example.jetpackdemo.day2022.month09.day2022_0905
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.TextView
 import com.example.jetpackdemo.R
 import com.example.jetpackdemo.databinding.FragmentItemBinding
 
-import com.example.jetpackdemo.day2022_0905.placeholder.PlaceholderContent.PlaceholderItem
+import com.example.jetpackdemo.day2022.month09.day2022_0905.placeholder.PlaceholderContent.PlaceholderItem
 
 /**
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].

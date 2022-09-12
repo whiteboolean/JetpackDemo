@@ -1,4 +1,4 @@
-package com.example.jetpackdemo.day2022_0906.ui.login
+package com.example.jetpackdemo.day2022.month09.day2022_0906.ui.login
 
 /**
  * User details post authentication that is exposed to the UI

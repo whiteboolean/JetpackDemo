@@ -1,9 +1,9 @@
-package com.example.jetpackdemo.day2022_0906.ui.login
+package com.example.jetpackdemo.day2022.month09.day2022_0906.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.jetpackdemo.day2022_0906.data.LoginDataSource
-import com.example.jetpackdemo.day2022_0906.data.LoginRepository
+import com.example.jetpackdemo.day2022.month09.day2022_0906.data.LoginDataSource
+import com.example.jetpackdemo.day2022.month09.day2022_0906.data.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

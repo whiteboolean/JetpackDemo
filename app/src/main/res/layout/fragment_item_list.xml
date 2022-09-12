@@ -9,5 +9,5 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context=".day2022_0905.ItemFragment"
+    tools:context=".day2022.month09.day2022_0905.ItemFragment"
     tools:listitem="@layout/fragment_item" />
