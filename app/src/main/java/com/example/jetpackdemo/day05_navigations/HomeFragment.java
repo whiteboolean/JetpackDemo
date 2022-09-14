@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.SeekBar;
 
 import com.example.jetpackdemo.R;
-import com.example.jetpackdemo.databinding.FragmentHomeBinding;
+import com.example.jetpackdemo.databinding.FragmentHome1Binding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -69,7 +69,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         MyViewModel myViewModel;
         myViewModel = new ViewModelProvider(getActivity()).get(MyViewModel.class);
-        FragmentHomeBinding binding = DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false);
+        FragmentHome1Binding binding = DataBindingUtil.inflate(inflater,R.layout.fragment_home1,container,false);
         binding.setData(myViewModel);
         binding.setLifecycleOwner(getActivity());
         binding.button13.setOnClickListener(new View.OnClickListener() {

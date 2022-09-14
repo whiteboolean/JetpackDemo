@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.jetpackdemo.day05_navigations.HomeFragment"
         android:label="家庭"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/fragment_home1">
         <action
             android:id="@+id/action_homeFragment_to_detailFragment4"
             app:destination="@id/detailFragment"

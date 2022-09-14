@@ -16,12 +16,6 @@ android {
         kotlinOptions{
             jvmTarget = 1.8
         }
-        dataBinding {
-            enabled true
-        }
-        viewBinding{
-            enabled true
-        }
         vectorDrawables {
             useSupportLibrary true
         }
@@ -46,6 +40,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding true
         compose true
     }
     kotlinOptions {
